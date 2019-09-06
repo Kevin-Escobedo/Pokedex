@@ -8,3 +8,11 @@ class Stats:
         self.SPATK = SPATK
         self.SPDEF = SPDEF
         self.SPE = SPE
+
+    def __repr__(self):
+        return "Stats({}, {}, {}, {}, {}, {})".format(self.HP,
+                                                      self.ATK,
+                                                      self.DEF,
+                                                      self.SPATK,
+                                                      self.SPDEF,
+                                                      self.SPE)
