@@ -36,4 +36,3 @@ def create_pokedex(file_name:open) -> dict:
 
 if __name__ == "__main__":
     pokedex = create_pokedex("pokedex.txt")
-    print(pokedex)
