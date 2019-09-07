@@ -8,6 +8,7 @@ class Stats:
         self.SPATK = SPATK
         self.SPDEF = SPDEF
         self.SPE = SPE
+        self.base_total = self.get_base_total()
 
     def __repr__(self):
         return "Stats({}, {}, {}, {}, {}, {})".format(self.HP,
@@ -16,3 +17,5 @@ class Stats:
                                                       self.SPATK,
                                                       self.SPDEF,
                                                       self.SPE)
+    def get_base_total(self):
+        return self.HP + self.ATK + self.DEF + self.SPATK + self.SPDEF + self.SPE
